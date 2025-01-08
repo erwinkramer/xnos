@@ -15,12 +15,16 @@ In principle very similar to [nixos-wsl-starter](https://github.com/LGUG2Z/nixos
 
 🏃 Clone this repo.
 
-🏃 Download the WSL compatible `tar.gz` at [NixOS-WSL](https://github.com/nix-community/NixOS-WSL/releases).
+🏃 Download the WSL compatible `tar.gz` at [NixOS-WSL](https://github.com/nix-community/NixOS-WSL/releases) to the root of the cloned repo.
+
+🏃 Install WSL (if not installed yet)
+```powershell
+wsl --install
+```
 
 🏃 Import the  `tar.gz` into the OS folder in this repo:
 
 ```powershell
-wsl --install
 wsl --import NixOS ./OS nixos-wsl.tar.gz --version 2
 ```
 
@@ -39,7 +43,7 @@ sudo nixos-rebuild --flake path://$PWD/config/.#myhostyolo switch -L --upgrade
 
 The first time you rebuild you get a `Error: Failed to open dbus connection` message because it actually upgraded NixOS as well, this is expected.
 
-🏃 Enter your IDE environment in NixOS with Command Palette: `WSL: Reopen Folder in WSL`.
+🏃 Enter your IDE environment in NixOS with Command Palette: `WSL: Reopen Folder in WSL` and select `NixOs`.
 
 🏃 Install the recommended VSCode extensions as requested in the pop-up message. (this is a one time install, it actually preserves the extensions on reboot/rebuilds)
 
