@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "jnoortheen.nix-ide",
+        "ms-vscode-remote.remote-wsl",
+        "arrterian.nix-env-selector"
+    ]
+}

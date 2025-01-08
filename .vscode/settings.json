@@ -1,0 +1,24 @@
+{
+    "files.eol": "\n",
+    "cSpell.enabled": true,
+    "nix.enableLanguageServer": true,
+    "nix.serverPath": "nixd", // The path to the LSP server executable.
+    "nix.serverSettings": {
+        "nixd": {
+            "formatting": {
+                "command": [
+                    "nixfmt"
+                ]
+            }
+        }
+    },
+    "nix.formatterPath": "nixpkgs-fmt",
+    "remote.extensionKind": {
+        "arrterian.nix-env-selector": [
+            "workspace"
+        ],
+        "jnoortheen.nix-ide": [
+            "workspace"
+        ]
+    }
+}
