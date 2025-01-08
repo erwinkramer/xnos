@@ -1,5 +1,8 @@
 # NixOS VSCode Speedrun
 
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/erwinkramer/xnos)
+
 ![xnos](.images/xnos.png)
 
 ## Introduction
@@ -59,3 +62,14 @@ wsl --unregister NixOS
 ## Considerations
 
 VSCode extensions ideally should be installed via NixOS itself, but no native way is found. Please see [discussion @ discourse.nixos.org](https://discourse.nixos.org/t/nixos-in-wsl-how-to-install-vscode-extensions/55445/4) as well.
+
+## License
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
