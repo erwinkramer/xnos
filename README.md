@@ -76,7 +76,11 @@ wsl -d NixOS #get a shell
 
 🏃 Follow the steps specified in the README of `nixos-on-azure`.
 
-🏃 Use OpenTofu with the [nixos-anywhere/nixos-rebuild](https://github.com/nix-community/nixos-anywhere/blob/main/terraform/nixos-rebuild.md) module to rebuild and update your VMs.
+🏃 Now manage your fleet! Try:
+
+- OpenTofu with the [nixos-anywhere/nixos-rebuild](https://github.com/nix-community/nixos-anywhere/blob/main/terraform/nixos-rebuild.md) module to rebuild and update your VMs.
+- Or try [comin](https://github.com/nlewo/comin?tab=readme-ov-file#comin---gitops-for-nixos-machines) for GitOps ([supports](https://github.com/nlewo/comin/blob/main/docs/authentication.md#authentication-for-private-repositories) private GitHub and GitLab repo's).
+- Or choose any other [deployment tool](https://nix-community.github.io/awesome-nix/#deployment-tools).
 
 ## Considerations
 
