@@ -39,7 +39,7 @@ wsl -d NixOS #get a shell
 🏃 Rebuild with the included flake (using this path notation to support git integration):
 
 ```
-sudo nixos-rebuild --flake path://$PWD/config/.#myhostyolo switch -L --upgrade
+sudo nixos-rebuild --flake path://$PWD/Config/.#myhostyolo switch -L
 ```
 
 The first time you rebuild you get a `Error: Failed to open dbus connection` message because it actually upgraded NixOS as well, this is expected.

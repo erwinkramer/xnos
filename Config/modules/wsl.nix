@@ -8,6 +8,7 @@
   environment.systemPackages = [
     pkgs.nixfmt-rfc-style # required for NIX IDE extension in vscode
     pkgs.nixd # language server for NIX IDE extension in vscode
+    pkgs.opentofu
   ];
 
   programs.nix-ld = {
