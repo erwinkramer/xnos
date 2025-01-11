@@ -76,6 +76,8 @@ wsl -d NixOS #get a shell
 
 🏃 Follow the steps specified in the README of `nixos-on-azure`.
 
+🏃 Use OpenTofu with the [nixos-anywhere/nixos-rebuild](https://github.com/nix-community/nixos-anywhere/blob/main/terraform/nixos-rebuild.md) module to rebuild and update your VMs.
+
 ## Considerations
 
 VSCode extensions ideally should be installed via NixOS itself, but no native way is found. Please see [discussion @ discourse.nixos.org](https://discourse.nixos.org/t/nixos-in-wsl-how-to-install-vscode-extensions/55445/4) as well.
