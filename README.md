@@ -64,6 +64,18 @@ sudo nix-collect-garbage --delete-old
 wsl --unregister NixOS
 ```
 
+## To Azure
+
+🏃 Get the WSL2 shell again:
+
+```powershell
+wsl -d NixOS #get a shell
+```
+
+🏃 Clone [nixos-on-azure](https://github.com/erwinkramer/nixos-on-azure).
+
+🏃 Follow the steps specified in the README of `nixos-on-azure`.
+
 ## Considerations
 
 VSCode extensions ideally should be installed via NixOS itself, but no native way is found. Please see [discussion @ discourse.nixos.org](https://discourse.nixos.org/t/nixos-in-wsl-how-to-install-vscode-extensions/55445/4) as well.
