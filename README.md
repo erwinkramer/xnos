@@ -66,7 +66,18 @@ wsl --unregister NixOS
 
 ## Arion
 
-🏃 Start container(s):
+🏃 Configure WSL globally to [free up port 53 (DNS)](https://github.com/microsoft/WSL/issues/9095#issuecomment-2317768443), use the following configuration:
+
+```powershell
+[wsl2]
+localhostForwarding = true
+networkingMode = NAT
+dnsProxy = true
+firewall = true
+dnsTunneling = false
+```
+
+🏃 Reboot NixOS and start the container(s):
 
 ```powershell
 cd ./config
@@ -78,9 +89,18 @@ sudo arion logs -f
 
 <http://127.0.0.1:8080/>
 
-🏃 Configure WSL globally for DNS container:
+🏃 Do a lookup on TCP, since [UDP traffic isn't supported on WSL2](https://github.com/microsoft/WSL/issues/9095#issuecomment-1299227600). Run this on your host:
 
-<https://github.com/microsoft/WSL/issues/9095#issuecomment-2317768443>
+```powershell
+nslookup -vc nu.locali 127.0.0.1
+```
+
+This should return the following, as specified by [the Corefile](/DNS/Corefile):
+
+```powershell
+Name:    nu.locali
+Address:  127.0.0.1
+```
 
 ## To Azure
 
