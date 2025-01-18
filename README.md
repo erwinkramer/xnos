@@ -66,6 +66,8 @@ wsl --unregister NixOS
 
 ## Arion
 
+*[Arion](https://docs.hercules-ci.com/arion/) is a tool for building and running applications that consist of multiple docker containers using NixOS modules.*
+
 🏃 Configure WSL globally to [free up port 53 (DNS)](https://github.com/microsoft/WSL/issues/9095#issuecomment-2317768443), use the following configuration:
 
 ```powershell
