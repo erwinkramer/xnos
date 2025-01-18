@@ -72,7 +72,6 @@ wsl --unregister NixOS
 cd ./config
 sudo arion up -d
 sudo arion logs -f
-
 ```
 
 ## To Azure
