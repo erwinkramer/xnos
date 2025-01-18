@@ -64,6 +64,17 @@ sudo nix-collect-garbage --delete-old
 wsl --unregister NixOS
 ```
 
+## Arion
+
+🏃 Start container(s):
+
+```powershell
+cd ./config
+sudo arion up -d
+sudo arion logs -f
+
+```
+
 ## To Azure
 
 🏃 Get the WSL2 shell again:
