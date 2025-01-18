@@ -89,7 +89,7 @@ sudo arion logs -f
 
 <http://127.0.0.1:8080/>
 
-🏃 Do a lookup on TCP, since [UDP traffic isn't supported on WSL2](https://github.com/microsoft/WSL/issues/9095#issuecomment-1299227600). Run this on your host:
+🏃 Use CoreDNS; do a lookup on TCP, since [UDP traffic isn't supported on WSL2](https://github.com/microsoft/WSL/issues/9095#issuecomment-1299227600). Run this on your host:
 
 ```powershell
 nslookup -vc nu.locali 127.0.0.1
