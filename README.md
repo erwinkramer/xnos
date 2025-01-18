@@ -78,6 +78,10 @@ sudo arion logs -f
 
 <http://127.0.0.1:8080/>
 
+🏃 Configure WSL globally for DNS container:
+
+<https://github.com/microsoft/WSL/issues/9095#issuecomment-2317768443>
+
 ## To Azure
 
 🏃 Get the WSL2 shell again:
