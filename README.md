@@ -110,7 +110,7 @@ Address:  127.0.0.1
 wsl -d NixOS #get a shell
 ```
 
-🏃 Clone [nixos-on-azure](https://github.com/erwinkramer/nixos-on-azure).
+🏃 Clone [erwinkramer/nixos-on-azure](https://github.com/erwinkramer/nixos-on-azure), this repo is forked from [rudesome/nixos-on-azure](https://github.com/rudesome/nixos-on-azure) but I added Arion with dozzle.
 
 🏃 Follow the steps specified in the README of `nixos-on-azure`.
 
