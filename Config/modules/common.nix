@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 
 {
   system.stateVersion = "24.05";
@@ -14,6 +14,11 @@
   networking.firewall = {
     enable = false;
   };
+
+  environment.systemPackages = [
+    pkgs.dig
+    pkgs.lsof
+  ];
 
   system.autoUpgrade = {
     enable = true;

@@ -18,7 +18,7 @@
           modules = [
             nixos-wsl.nixosModules.wsl
             ./modules/common.nix
-            ./modules/podman.nix
+            ./modules/arion.nix
             ./modules/wsl.nix
           ];
         };

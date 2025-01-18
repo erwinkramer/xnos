@@ -3,3 +3,4 @@
 result*
 Config/tofu/.terraform*
 *.tfstate*
+.tmp*
