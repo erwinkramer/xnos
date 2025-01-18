@@ -74,6 +74,10 @@ sudo arion up -d
 sudo arion logs -f
 ```
 
+🏃 Open dozzle:
+
+<http://127.0.0.1:8080/>
+
 ## To Azure
 
 🏃 Get the WSL2 shell again:
