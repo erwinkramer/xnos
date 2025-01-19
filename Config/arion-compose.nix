@@ -6,7 +6,7 @@
 
   services.coredns = {
     service.image = "coredns/coredns";
-    service.ports = [ "53:53"];
+    service.ports = [ "53:53" ];
     service.volumes = [ "../DNS:/coredns-config/" ];
     service.networks = [ "eden" ];
     service.command = "-conf coredns-config/Corefile";

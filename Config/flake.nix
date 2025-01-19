@@ -12,7 +12,11 @@
   };
 
   outputs =
-    { nixpkgs, nixos-wsl, self }:
+    {
+      nixpkgs,
+      nixos-wsl,
+      self,
+    }:
 
     {
       nixosConfigurations = {

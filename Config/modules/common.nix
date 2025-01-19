@@ -1,7 +1,7 @@
 { lib, pkgs, ... }:
 
 {
-  system.stateVersion = "24.11"; #https://discourse.nixos.org/t/when-should-i-change-system-stateversion/1433/21?u=r3verse
+  system.stateVersion = "24.11"; # https://discourse.nixos.org/t/when-should-i-change-system-stateversion/1433/21?u=r3verse
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
   nix.settings.experimental-features = [

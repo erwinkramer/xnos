@@ -1,4 +1,6 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+
+{
   environment.systemPackages = [
     pkgs.arion
   ];
@@ -10,5 +12,5 @@
   virtualisation.podman.dockerSocket.enable = false;
 
   # Use your username instead of `nixos`
-  users.extraUsers.nixos.extraGroups = ["podman"];
+  users.extraUsers.nixos.extraGroups = [ "podman" ];
 }
